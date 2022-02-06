@@ -8,6 +8,18 @@ html, body{
     height: 100%;
 }
 
+.main-container{
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-columns: 100%;
+    background-color: #ffffff;
+}
+
+.main-container .back-green{
+  background-color: green;
+  width: 100%;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1.2fr 2fr ;
@@ -16,12 +28,12 @@ html, body{
     width: 100%;
     margin: 10px 0px 10px 20px;
     background-color: aliceblue;
-    margin: 2px;
-    padding: 2px;
+    margin: 30px;
 }
 
  .chats{
    background: white;
+   height: 100%;
 }
 
 .chatting{
