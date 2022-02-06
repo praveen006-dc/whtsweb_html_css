@@ -144,13 +144,14 @@ header .icons{
 
 .chatting{
     display: grid;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr;
     grid-template-columns: 100%;
-    background-color: aqua;
+    justify-content: space-between;
+    background-color: #E8E5E3;
 }
 
 .chatting .chat-box{
-    background-color: crimson;
+    background-color: #E4DCD9;
 }
 
 .chatting .contact-name{
@@ -160,6 +161,22 @@ header .icons{
   height: 90px;
   border: 1px solid black;
 }
+
+.chatting .contact-name .chat-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+ }
+
+ .chatting .contact-name .chat-icons i{
+    display:inline-block;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+ }
+
+
 
 .chatting .chat-withname{
     display: flex;
@@ -176,10 +193,70 @@ header .icons{
 
 .chatting .chat-typebox{
     display: grid;
-    grid-template-columns: 0.4fr 2fr 0.4fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 100%;
-   justify-content: space-between;
-   background-color: gray;
-   height: 200px;
+   height: 50px;
    border: 1px solid black;
  }
+
+ .chatting .chat-typebox .emoji{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 2px;
+ }
+
+ .chatting .chat-typebox .search-chat{
+     background-color: white;
+     width: 100%;
+}
+
+ .chatting .chat-typebox .mic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatting .chat-box{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100%;
+}
+
+.chatting .chat-box .chat-box-upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 8000;
+}
+
+.chatting .chat-box .chat-box-lower{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px;
+}
+
+.chatting .chat-box .chat-box-lower .send-msg-by-me{
+    margin-left: auto;
+    background-color: #4dcc2de1;
+    padding: 5px;
+    /* margin: 5px; */
+} 
+
+.chatting .chat-box .chat-box-lower .send-msg-contact-name{
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 5px;
+    /* margin: 5px; */
+} 
+
+.chatting .chat-box .chat-box-lower .date{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1cde6;
+    padding: 5px;
+    /* margin: 5px; */
+} 
+
